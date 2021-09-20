@@ -36,7 +36,20 @@ const useMinter = () => {
 
   //       setCtime(time.currentDateTime)
   //     })
-  // }, [])
+  // }, [])  
+  
+  useEffect(() => {
+    axios.get(`https://admin.certz.io/api/time`)
+      .then(res => {
+		
+		console.log()
+		  
+        const time = res.data;
+
+
+        setCtime(time.nowis)
+      })
+  }, [])
 
   const mint = async () => {
     setIsLoading(true)

@@ -37,11 +37,12 @@ const MintButton = (props: Props) => {
     goLiveDate = new Date( process.env.NEXT_PUBLIC_GO_LIVE_DATE_OVERRIDE );
   }
 
-  var date = new Date();
+  var date = new Date(ctime);
+  console.log( 'Date' , date );
   var count = 1;
 
   const isMintingReady =
-    goLiveDate && goLiveDate.getTime() < new Date().getTime()
+    goLiveDate && goLiveDate.getTime() < ctime
 
 
 
@@ -100,7 +101,7 @@ const MintButton = (props: Props) => {
                 count += 1;
 
                 date.setSeconds(date.getSeconds() + 1);
-                return date.getTime();
+                return ctime;
               }
 
               } daysInHours={false} renderer={renderer} />
