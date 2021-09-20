@@ -1,0 +1,101 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.nav a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.nav a:hover {
+  color: #4982bc;
+}
+.nav a.active {
+  color: #4982bc;
+}
+.btnft {
+  background-color: #4982bc;
+  color: #fff;
+}
+.btnft:hover {
+  background-color: #215182;
+  color: #fff;
+}
+.fw9 {
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+.fw7 {
+  font-weight: 700;
+}
+.card-body {
+  background-color: #f3f3f3;
+}
+.card-header {
+  background-image: url("images/card_header.png");
+  background-size: 100% 100%;
+  color: #fff;
+}
+.accordion-item {
+  border: none;
+  background: none;
+}
+.accordion-button:not(.collapsed) {
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+.accordion-body {
+  padding-left: 0px;
+}
+.accordion-button {
+  background: #f3f3f3;
+  color: #000;
+  font-weight: 700;
+  padding-left: 0px;
+  font-size: 20px;
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("images/ac-cl.png");
+}
+.accordion-button.collapsed::after {
+  background-image: url("images/ac-op.png");
+}
+.img-thumbnail {
+  border: 2px solid #4a82bc;
+  border-radius: 0.35rem;
+  padding: 0px;
+}
+.txt-theme {
+  color: #4982bc;
+}
+.carousel-control-next-icon {
+  background-image: url("images/cur-next.png");
+}
+.carousel-control-prev-icon {
+  background-image: url("images/cur-prev.png");
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.padding-0 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}

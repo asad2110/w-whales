@@ -1,0 +1,52 @@
+.timer_completed {
+  display: none !important;
+}
+.timer_incompleted {
+  display: block !important;
+}
+
+.timer_completed_btn {
+  display: block !important;
+  max-width: 280px;
+  width: 100%;
+}
+.timer_incompleted_btn {
+  display: none !important;
+}
+
+.wallet_custom {
+  position: absolute;
+  top: 12px;
+  right: 18%;
+}
+
+.wallet_custom button {
+  background-color: #289ec9;
+}
+
+.wallet_header_custom button {
+  background: #fff;
+  color: #000;
+  max-width: 280px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 748px) {
+  .wallet_custom {
+    position: absolute;
+    top: 140px;
+    right: 35%;
+  }
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 1750px) {
+  .wallet_custom {
+    right: 13%;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1549px) {
+  .wallet_custom {
+    right: 8%;
+  }
+}
