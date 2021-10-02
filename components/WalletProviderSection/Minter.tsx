@@ -89,28 +89,7 @@ const MintButton = (props: Props) => {
           <WalletMultiButton />
         </div>
 
-      <Flex sx={{ flexDirection: "column" }}>
 
-        <p style={{ marginBottom: "0px", fontSize: '22px' }}>
-          Countdown Until Launch: &nbsp;
-          <small>
-            {goLiveDate && isMintingReady ? (
-               "0 Days 0 Hours 0 Minutes 0 Seconds"
-            ) : goLiveDate ? (
-              <Countdown date={goLiveDate?.getTime()} now={function () {
-                count += 1;
-
-                date.setSeconds(date.getSeconds() + 1);
-                return ctime;
-              }
-
-              } daysInHours={false} renderer={renderer} />
-            ) : (
-              "Live date not set"
-            )}
-          </small>
-        </p>
-      </Flex>
       
         <Flex
           sx={{
